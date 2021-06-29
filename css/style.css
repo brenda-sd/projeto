@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+   
+    body {
+	font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    }
+
+    .header {
+    display: flex;
+    background-color: rgba(224, 224, 224, 1);
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    }
+
+    .header span {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    }
+
+    .icon div {
+    width: 18px;
+    height: 2px;
+    background-color: rgba(51, 51, 51, 1);
+    margin: 6px 0;
+    }
+
+    .header img {
+    width: 30px;
+    }
+
+    .responsive-menu ul {
+    display: none;
+    list-style-type: none; 
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: 85.4%;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 16px;
+    }
+
+    .responsive-menu ul li {
+    text-align: right;
+    margin: 7px 0;
+    padding: 0px 20px;
+    }
+
+    .responsive-menu ul li:nth-child(1) {
+    text-align: left;
+    }
+
+    .responsive-menu ul li:hover {
+    background-color: rgba(196, 196, 196, 1.0);
+    color: rgba(51, 51, 51, 1);
+    }
+
+    .responsive-menu ul li:hover:nth-child(1) {
+    background-color: rgba(51, 51, 51, 1);    
+    color: white;
+    }
+
+    .responsive-menu:hover ul {
+    display: block;
+    }
+
+
+    .form-box {
+    padding-top: 26px;
+    padding: 20px 0 10px 0;
+    display: inline-block;
+    }
+
+    .transacao div {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+    padding: 0px 20px;
+    color: rgba(51, 51, 51, 1);
+    font-family: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Lato;
+    }
+
+    .transacao select {
+    height: 32px;
+    top: 25px;
+    border: 1px solid rgba(136, 136, 136, 1);
+    border-radius: 4px;
+    color: rgba(136, 136, 136, 1);
+    }
+
+    .transacao input {
+    height: 32px;
+    top: 25px;
+    border: 1px solid rgba(136, 136, 136, 1);
+    border-radius: 4px;
+    color: rgba(136, 136, 136, 1);
+    }
+
+    button {
+    width: 371px;
+    height: 32px;
+    background-color: rgba(51, 51, 51, 1.0);
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    }
+
+    .button div {
+    display: none;
+    }
+
+    hr {
+    width: 371px;    
+    }
+
+    .button hr {
+    align-items: center;
+    }
+
+    .transacao h3 {
+    display: none;
+    }
+
+    .lista h3 {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    }
+
+    div.lista {
+    margin-top: 41px;
+    }
+
+    table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 371px;
+    height: 281px;
+    line-height: 16px;
+    }
+
+    .tr-border {
+    font-size: 14px;
+    }
+
+    .tr-border th {
+    text-align: left;
+    border-bottom: 1px solid #979797;
+    }
+
+    .tr-border td {
+    border-bottom: 1px solid #979797;
+    }
+
+    .tr-right {
+    text-align: right;
+    font-size: 14px;
+    }
+
+    .tr-right-total {
+    font-weight: bold;
+    text-align: right;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    border-top: double;
+    border-color: #979797;
+    }
+
+    .tr-left {
+    padding: 0px 0px 20px 0px;
+    font-weight: bold;   
+    text-align: left;
+    border-top: double;
+    border-color: #979797;
+    }
+
+    th.tr-final {
+    text-align: center;
+    }
+    
+
+    td.right-lucro {
+    text-align: right;
+    font-size: 10px;
+    line-height: 22px;
+    font-weight: bold;
+    padding: 0px 20px;
+    }
+
+    td.mais {
+    border-bottom: double;
+    border-color: #979797;
+    }
+
+    span {
+    display: block;
+    font-size: 12px;
+    }
+
+    footer {
+    border-bottom: 8px solid rgba(51, 51, 51, 1.0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    }
+
+    
+/* smartphone with navigation active */
+
+@media screen and (min-width: 412px) {
+
+    .responsive-menu ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 350px;
+    height: 40px;
+    background-color: white;
+    color: rgba(51, 51, 51, 1); 
+    }
+
+    .responsive-menu ul li {
+    border-left: 1px solid rgba(51, 51, 51, 1);
+    }
+
+    .responsive-menu ul li:nth-child(2) {
+    border: 0;
+    }
+
+    .responsive-menu ul li:nth-child(1) {
+    display: none;   
+    }
+
+    .icon div {
+    display: none;
+    }
+
+    .nova-transacao {
+    display: none;
+   }
+
+}
+
+/* tablet portrait*/
+
+@media screen and (min-width: 768px) {
+
+    .responsive-menu ul {
+    display: none;
+    }
+
+    .icon div {
+    display: block;
+    }
+
+    .header {
+    width: 100%;
+    }
+
+   .container {
+    padding: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    }
+
+    .transacao {
+    border: 1px solid #979797;
+    width: 728px;
+    height: 189px;
+    border-radius: 6px;
+    }
+
+    .transacao h3 {
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    }
+
+    .form-box {
+    display: flex;
+    align-items: flex-end;
+    }
+
+    button {
+    width: 200px;
+    }
+
+    hr {
+    display: none;
+    }
+
+    table {
+    line-height: 16px;
+    width: 728px;
+    height: 281px;
+    }
+
+    .transacao select {
+    width: 150px;
+    }
+
+    .transacao input {
+    width: 348px;
+    }
+   
+
+}
+
+/* tablet portrait with navigation active*/
+@media screen and (min-width: 768px) {
+
+    .responsive-menu ul {
+    list-style-type: none; 
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    position: fixed;
+    height: 100%;
+    width: 252px;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+    padding: 20px 0px;
+    font-size: 16px;
+    }
+
+    .responsive-menu ul li {
+    text-align: right;
+    margin: 7px 0;
+    padding: 0px 20px;
+    }
+
+    .responsive-menu ul li:nth-child(1) {
+    text-align: left;
+    display: block;
+    }
+
+    .responsive-menu ul li:hover {
+    background-color: rgba(196, 196, 196, 1.0);
+    color: rgba(51, 51, 51, 1);
+    }
+
+    .responsive-menu ul li:hover:nth-child(1) {
+    background-color: rgba(51, 51, 51, 1);    
+    color: white;
+    }
+
+    .responsive-menu:hover ul {
+    display: block;
+    }
+
+}
+
+/* tablet landscape */
+@media screen and (min-width: 1112px) {
+
+    .header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    }
+
+    .container {
+    display: flex;
+    padding-top: 26px;  
+    }
+
+    .header span {
+    flex: auto;
+    padding: 20px;
+    }
+
+    .header img {
+    width: 40px;
+    height: 36.84px;
+    }
+
+    .transacao {
+    width: 400px;
+    height: 344px;
+    }
+
+    .form-box {
+    display: block;
+    padding: 0;
+    }
+
+    .button {
+    align-items: center;
+    }
+
+    button {
+    width: 370px;
+    }
+
+    .lista {
+    padding: 0px 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    }
+
+    div.lista {
+    margin: 0;
+    }
+
+    .icon {
+    display: none;
+    }
+
+    .responsive-menu ul { 
+    background-color: white;
+    color: rgba(51, 51, 51, 1);
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    }
+
+    .responsive-menu ul li {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-right: 8px;
+    padding-left: 8px;
+    }
+
+    .responsive-menu ul li:nth-child(1) {
+    display: none;
+    }
+
+}
+
+/* desktop */
+@media screen and (min-width: 1500px) {
+
+    .container {
+    padding-top: 30px;
+    padding: 100px 100px 0px 100px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+      
+
+
+
+
+
+	
+	
